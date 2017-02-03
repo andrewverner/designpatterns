@@ -7,7 +7,7 @@
  * Time: 0:56
  */
 
-Interface Car
+interface Car
 {
 
     public function getName();

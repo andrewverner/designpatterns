@@ -7,7 +7,7 @@
  * Time: 0:53
  */
 
-Interface CarFactory
+interface CarFactory
 {
 
     public function getProduct($model);
