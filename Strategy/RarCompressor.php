@@ -2,7 +2,7 @@
 
 /**
  * Created by PhpStorm.
- * User: dkhodakovskiy
+ * User: Denis.Khodakovskiy
  * Date: 09.02.17
  * Time: 17:35
  */
@@ -14,7 +14,6 @@ class RarCompressor extends CompressorStrategy
     {
         $rar = new RarArchive();
         $rar->addFile($fileName);
-        //[...] archiving
 
         return $rar->fileName;
     }
