@@ -12,8 +12,8 @@ class Paint
     private $history;
 
     public function process(PaintCommand $command) {
-        echo "Processing action {$command->getAction()} {$command->getFigure()}" . PHP_EOL;
-        $this->history[] = "{$command->getAction()} {$command->getFigure()}";
+        echo "Processing action $command" . PHP_EOL;
+        $this->history[] = $command->__toString();
     }
 
     public function getHistory() {

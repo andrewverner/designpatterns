@@ -40,11 +40,11 @@ class PaintCommand implements Command
         $this->action = ($this->action == self::ACTION_ERASE) ? 1 : 0;
     }
 
-    public function getAction() {
+    private function getAction() {
         return ($this->action == self::ACTION_ERASE) ? 'ERASE' : 'DRAW';
     }
 
-    public function getFigure() {
+    private function getFigure() {
         $figures = [
             self::FIGURE_LINE => 'LINE',
             self::FIGURE_CIRCLE => 'CIRCLE',
@@ -52,5 +52,10 @@ class PaintCommand implements Command
             self::FIGURE_ELLIPSE => 'ELLIPSE'
         ];
         return $figures[$this->figure];
+    }
+
+    public function __toString()
+    {
+        return "{$this->getAction()} {$this->getFigure()}";
     }
 }
