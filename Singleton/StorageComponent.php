@@ -28,8 +28,7 @@ class StorageComponent
         $this->storage = $storage;
     }
 
-    public function getStorage()
-    {
+    public function getStorage() {
         return $this->storage;
     }
 

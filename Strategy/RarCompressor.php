@@ -10,8 +10,7 @@
 class RarCompressor extends CompressorStrategy
 {
 
-    public function pack($fileName)
-    {
+    public function pack($fileName) {
         $rar = new RarArchive();
         $rar->addFile($fileName);
 
