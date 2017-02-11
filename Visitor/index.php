@@ -14,10 +14,10 @@ spl_autoload_register(function ($className) {
 $visitor = new DecartVisitor();
 
 $triangle = new Triangle(10, 7);
-$code = new Cone(2, 4, 5.5);
+$cone = new Cone(2, 4, 5.5);
 
 echo $triangle->visit($visitor) . PHP_EOL;
-echo $code->visit($visitor);
+echo $cone->visit($visitor);
 
 //35
 //47.123889803847
